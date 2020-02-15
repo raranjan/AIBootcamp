@@ -9,7 +9,8 @@ def generate(n):
     @param n: number of data to be generated
     @return: list of numbers
     """
-    return [math.sin(2*math.pi*i) - np.random.randn() for i in range(n)]
+    initial_data = np.random.random(n) # Generate random data between 0 and 1
+    return [math.sin(2*math.pi*i) - np.random.randn() for i in initial_data]
 
 if __name__ == '__main__':
     count = 10
