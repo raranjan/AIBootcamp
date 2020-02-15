@@ -1,7 +1,7 @@
 import math
 import sys
 import numpy as np
-
+import argparse
 
 def generate(n):
     """
@@ -13,9 +13,12 @@ def generate(n):
     return [math.sin(2*math.pi*i) + np.random.randn() for i in initial_data]
 
 if __name__ == '__main__':
-    count = 10
-    if len(sys.argv) > 1:
-        count = sys.argv[1]
+    parser = argparse.ArgumentParser(description='A tutorial of argparse!')
+    parser.add_argument("--n")
 
+    count = 10
+    args = parser.parse_args()
+    if args.n:
+        count = int(args.n)
     numbers = generate(count)
     print('Generated Data for {} numbers: {}'.format(count, numbers))
