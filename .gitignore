@@ -10,3 +10,6 @@ __pycache__/
 # Idea
 .idea/
 .vscode/
+
+# data folder
+data/
