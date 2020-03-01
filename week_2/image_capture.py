@@ -1,7 +1,7 @@
 import cv2
 from sklearn.cluster import KMeans
 
-img_path = 'data/paris.jpeg'
+img_path = '/Users/rakesh/Workspace/AIBootcamp/data/paris.jpeg'
 
 def show_image(gray=True):
     img = cv2.imread(img_path)

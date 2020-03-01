@@ -1,7 +1,7 @@
 import cv2
 import imutils
 
-dog = cv2.imread("data/dog.jpg")
+dog = cv2.imread("/Users/rakesh/Workspace/AIBootcamp/data/dog.jpg")
 
 
 def image_proc_pipeline(img):
