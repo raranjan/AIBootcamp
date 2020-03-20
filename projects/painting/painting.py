@@ -1,7 +1,7 @@
 import cv2
 from sklearn.cluster import KMeans
 
-img_path = '/data/paris.jpeg'
+img_path = '../../data/paris.jpeg'
 limit_image_size = 0
 stroke_scale = 0
 gradient_smoothing_radius = 0
