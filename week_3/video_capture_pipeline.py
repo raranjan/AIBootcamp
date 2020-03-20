@@ -23,7 +23,7 @@ def video_capture():
 
         if ret == True:
             resize, result = image_proc_pipeline(frame)
-
+            
             cv2.imshow("resized", resize)
             cv2.imshow("result", result)
 
