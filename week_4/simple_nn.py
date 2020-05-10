@@ -8,12 +8,7 @@ batch_size = 5
 output_size = 1
 hidden_size = 8
 
-# Seed will ensure that we get same random data generated everytime
-torch.manual_seed(123)
-input = torch.rand(5, 3) # Create tensor of size 5 x 3 (5 rows with 3 colums each)
-logger.info(input.shape)
-
-class HelloNN(nn.Module):
+class SimpleNN(nn.Module):
     def __init__(self, inputs, hidden, output):
         super().__init__()
         # Creating the basic skeleton structure of neural network
@@ -27,5 +22,4 @@ class HelloNN(nn.Module):
         pass
 
 if __name__ == '__main__':
-    net = HelloNN(input_size, hidden_size, output_size)
-    logger.info("Created Neural Net --> {}".format(net))
+    net = SimpleNN(input_size, hidden_size, output_size)
